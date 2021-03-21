@@ -1,0 +1,176 @@
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 500px;
+    overflow: hidden;
+    background-color: hsla(55, 67%, 80%, 0.9);
+    border-radius: 50px;
+}
+  
+.top
+{
+    float: left;
+}
+  
+.top a, .dropDown
+{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:x-large;
+}
+  
+.top a:hover, .dropDown:hover
+{
+    background-color: hsla(0, 0%, 100%, 0.9);
+    color: red;
+}
+
+.dropDownContent
+{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 135px;
+    margin-left: -16px;
+}
+
+.dropDownContent a
+{
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.dropDownContent a:hover
+{
+    background-color: rgba(182, 54, 54, 0);
+    color: rgb(255, 0, 0);
+}
+
+.dropDown:hover .dropDownContent
+{
+    display: block;
+}
+
+body
+{
+    background-image: url(https://c8.alamy.com/comp/2AD34DK/culinary-background-for-recipe-of-christmas-baking-2AD34DK.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.container
+{
+    padding: 100px;
+}
+
+.container a
+{
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+}
+
+.content
+{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    border: 2px solid black;
+    margin-left: 100px;
+    margin-top: -50px;
+}
+
+.description
+{
+    font-size: large;
+}
+
+.ingredients
+{
+    font-size: 20px;
+    list-style-type: square;
+}
+
+.time
+{
+    font-size: 20px;
+    list-style: circle;
+    text-align: left;
+}
+
+.nutrition
+{
+    font-size: 20px;
+    list-style: circle;
+}
+
+.step
+{
+    font-size: 20px;
+}
+
+.picture
+{
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.picture:hover
+{
+    border: 2px solid grey;
+}
+
+.item1
+{ 
+    grid-area: menu; 
+}
+
+.item2
+{ 
+    grid-area: main;
+    padding-top: 50px;
+}
+
+.item3
+{ 
+    grid-area: right; 
+    padding-top: 50px;
+}
+
+.item4
+{ 
+    grid-area: footer; 
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-areas:
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    background-color: rgba(245, 245, 245, 0.9);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+.title
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+.border
+{
+    border-radius: 50px;
+    border: 2px solid black;
+}
